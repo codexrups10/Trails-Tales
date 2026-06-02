@@ -1,0 +1,1064 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.40),rgba(0,0,0,0.40));
+    background-position: center;
+    background-size: center;
+}
+
+.content{
+    width: 100%;
+    position: absolute;
+    color: white;
+    top: 45%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+.content h2{
+    margin-top: 120px;
+    font-size: 60px;
+    font-weight: 800;
+}
+button{
+    width: 200px;
+    padding: 15px;
+    margin: 20px 5px;
+    text-align: center;
+    border-radius: 25px;
+    color: black;
+    border: 2px;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: 600;
+}
+button:hover{
+    background: rgb(0, 192, 226);
+    transition: 0.5s;
+}
+button:hover{
+    color: white;
+}
+.banner video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+@media(min-aspect-ratio: 16/9){
+    .banner video{
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+body {
+  background: #0a0a0a;
+  color: #eee;
+  line-height: 1.6;
+}
+/* ===== Section Styling ===== */
+.categories-section {
+  padding: 60px 20px;
+  background: #000;  /* dark background */
+  text-align: center;
+  color: #fff;
+}
+
+.section-title {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: #f39c12;
+}
+
+/* Row Layout */
+.categories-row {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 20px;
+  flex-wrap: wrap;  /* makes responsive on smaller screens */
+}
+
+/* Category Card */
+.category-card {
+  background: #111;
+  padding: 25px 20px;
+  border-radius: 12px;
+  width: 180px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 12px rgba(255,255,255,0.1);
+}
+
+.category-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(243,156,18,0.5);
+}
+
+/* Icon Circle */
+.icon-circle {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 15px;
+  background: #222;
+  color: #f39c12;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.category-card:hover .icon-circle {
+  background: #f39c12;
+  color: #000;
+}
+
+/* Titles & Text */
+.category-card h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #fff;
+}
+
+.category-card p {
+  font-size: 14px;
+  color: #bbb;
+}
+
+/* Sections */
+.section { padding: 80px 50px; text-align: center; }
+.section h2 { margin-bottom: 30px; font-size: 28px; }
+.section.dark { background: #222; }
+
+/* Grid Layout */
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+.card { background: #1a1a1a; border-radius: 8px; overflow: hidden; padding: 10px; transition: 0.3s; }
+.card img { width: 100%; height: 180px; object-fit: cover; border-radius: 6px; }
+.card h3 { margin: 15px 0 10px; }
+.card:hover { transform: scale(1.05); }
+
+/* Dark Section */
+.dark-section {
+  padding: 80px 50px;
+  background: linear-gradient(135deg, #0f2027, #222f34, #12181b);
+  text-align: center;
+  color: #eee;
+}
+
+.section-title {
+  font-size: 40px;
+  color: #f1c40f;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.section-subtitle {
+  font-size: 18px;
+  color: #bbb;
+  margin-bottom: 50px;
+  font-style: italic;
+}
+
+/* Grid Layout */
+.destinations-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+/* Card Style */
+.card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  background: #1a1a1a;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  cursor: pointer;
+}
+
+.card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  transition: transform 0.6s ease, filter 0.6s ease;
+}
+
+/* Hidden Reveal */
+.card-content {
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  background: rgba(0,0,0,0.8);
+  color: #fff;
+  text-align: left;
+  transition: bottom 0.4s ease;
+}
+
+.card h3 {
+  font-size: 22px;
+  margin-bottom: 5px;
+  color: #f39c12;
+}
+
+.card p {
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #ddd;
+}
+
+/* Hover Effects */
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.8);
+}
+
+.card:hover img {
+  transform: scale(1.15);
+  filter: brightness(0.7);
+}
+
+.card:hover .card-content {
+  bottom: 0;
+}
+
+/* Button */
+.btn {
+  display: inline-block;
+  padding: 8px 16px;
+  background: #f39c12;
+  color: #111;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background: #fff;
+  color: #f39c12;
+  box-shadow: 0 0 15px rgba(243,156,18,0.8);
+}
+
+
+/* Discover Section */
+.discover-section {
+  position: relative;
+  padding: 80px 20px;
+  text-align: center;
+  color: #fff;
+  overflow: hidden;
+}
+.discover-video {
+  position: absolute;
+  top: 0; 
+  left: 0;
+  width: 100%; 
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+
+  opacity: 1;              /* must be between 0–1 */
+  filter: brightness(1.12); /* 1 = normal, >1 = brighter, <1 = darker */
+}
+
+
+.discover-section .overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.7); /* dark overlay */
+  z-index: -1;
+}
+
+.discover-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.discover-title {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #f1c40f;
+}
+
+.discover-subtitle {
+  font-size: 18px;
+  color: #ddd;
+  margin-bottom: 50px;
+}
+
+/* Card Row */
+.discover-row {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+/* Card */
+.discover-card {
+  background: #111;
+  border-radius: 12px;
+  overflow: hidden;
+  width: 220px;
+  text-align: center;
+  padding-bottom: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.5);
+}
+
+.discover-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.discover-card h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 15px 0 8px;
+  color: #fff;
+}
+
+.discover-card p {
+  font-size: 14px;
+  color: #bbb;
+  padding: 0 10px;
+  margin-bottom: 15px;
+}
+
+.btn-discover {
+  display: inline-block;
+  padding: 8px 16px;
+  background: #f1c40f;
+  color: #000;
+  font-weight: 600;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.btn-discover:hover {
+  background: #d4ac0d;
+}
+
+/* Hover Effect */
+.discover-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(241,196,15,0.3);
+}
+
+
+/* ================== GALLERY ================== */
+.gallery-section {
+  padding: 80px 20px;
+  background: url('./images/gallery-bg.jpg') center/cover no-repeat fixed;
+  position: relative;
+  color: #fff;
+  text-align: center;
+}
+
+.gallery-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.gallery-section .container {
+  position: relative;
+  z-index: 2;
+}
+
+.section-title {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.section-subtitle {
+  font-size: 18px;
+  color: #ddd;
+  margin-bottom: 40px;
+}
+
+/* Gallery Grid */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+  margin-bottom: 40px;
+}
+
+/* Transparent Card */
+.gallery-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.08); /* transparent effect */
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+  transition: transform 0.4s ease;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gallery-card:hover {
+  transform: translateY(-10px);
+}
+
+.gallery-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.65;
+  transition: opacity 0.4s ease, transform 0.5s ease;
+}
+
+.gallery-card:hover img {
+  opacity: 0.85;
+  transform: scale(1.1);
+}
+
+/* Centered Overlay */
+.gallery-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.35); /* subtle transparent overlay */
+}
+
+.gallery-overlay h3 {
+  font-size: 22px;
+  margin-bottom: 12px;
+  color: #fff;
+  font-weight: 700;
+}
+
+.btn-explore {
+  display: inline-block;
+  padding: 8px 20px;
+  background: rgba(243, 156, 18, 0.9);
+  color: #000;
+  font-weight: 600;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.btn-explore:hover {
+  background: #ffa500;
+}
+
+/* Instagram Button */
+.btn-primary {
+  display: inline-block;
+  padding: 14px 32px;
+  background: #f39c12;
+  color: #000;
+  font-weight: 600;
+  border-radius: 40px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: #ffa500;
+}
+
+
+/* ================== TOUR CATEGORIES ================== */
+.tour-categories {
+  padding: 80px 20px;
+  background: #000; /* Dark background */
+  text-align: center;
+}
+
+.section-subtitle {
+  font-size: 16px;
+  color: #f39c12;
+  margin-bottom: 10px;
+}
+
+.section-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: #fff;
+}
+
+/* Tour Row */
+.tour-row {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+/* Tour Card */
+.tour-card {
+  background: #1a1a1a;
+  border-radius: 20px;
+  overflow: hidden;
+  width: 200px;
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tour-card img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+
+.tour-card h3 {
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+.tour-card p {
+  font-size: 14px;
+  color: #aaa;
+}
+
+.tour-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 18px rgba(243, 156, 18, 0.4);
+}
+
+/* Button */
+.btn-primary {
+  display: inline-block;
+  padding: 12px 28px;
+  background: #f39c12;
+  color: #000;
+  font-weight: 600;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: #ffa500;
+}
+
+/* Brand Highlight */
+.brand-highlight {
+  padding: 100px 20px;
+  background: #0d0d0d;
+}
+
+.highlight-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 50px;
+}
+
+.highlight-image img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.highlight-content {
+  text-align: left;
+}
+
+.highlight-text {
+  font-size: 16px;
+  color: #ccc;
+  margin: 20px 0;
+}
+
+.feature-box {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: #1a1a1a;
+  padding: 15px;
+  border-radius: 12px;
+  margin-top: 20px;
+}
+
+.feature-box i {
+  font-size: 24px;
+  color: #f1c40f;
+}
+
+.feature-box h4 {
+  margin: 0;
+  color: #fff;
+}
+
+.feature-box p {
+  font-size: 14px;
+  color: #030303;
+}
+
+
+/* Adventures Section with Background */
+.adventures-section {
+  position: relative;
+  background-image: url('./images/adv-back.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 80px 50px;
+  color: #fff;
+  text-align: center;
+}
+
+.adventures-section::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.55); /* dark overlay for readability */
+  z-index: 0;
+}
+
+/* Grid */
+.adventures-section .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Transparent Card (Glass Effect) */
+.adventures-section .card {
+  background: rgba(255, 255, 255, 0.12); /* transparent */
+  border-radius: 15px;
+  padding: 20px;
+  backdrop-filter: blur(10px); /* glass effect */
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 4px 25px rgba(0,0,0,0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: #fff;
+}
+
+.adventures-section .card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.adventures-section .card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 30px rgba(0,0,0,0.6);
+}
+
+.adventures-section .btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 18px;
+  background: #f39c12;
+  color: #111;
+  font-weight: bold;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.adventures-section .btn:hover {
+  background: #fff;
+  color: #111;
+}
+
+
+/* Contact Section */
+#contact {
+  background: #111;
+  padding: 80px 50px;
+  color: #eee;
+}
+
+#contact .main-container {
+  max-width: 900px;
+  margin: auto;
+}
+
+#contact .subtitle {
+  font-size: 22px;
+  font-weight: 600;
+  color: #f39c12;
+  display: block;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#contact .input-wrapper,
+#contact .input-subject {
+  display: flex;
+  flex-direction: column;
+}
+
+#contact label {
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+#contact input,
+#contact textarea {
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  background: #222;
+  color: #fff;
+  font-size: 15px;
+}
+
+#contact input:focus,
+#contact textarea:focus {
+  outline: 2px solid #f39c12;
+}
+
+#contact .form-submit {
+  text-align: center;
+}
+
+#contact button.btn {
+  background: #f39c12;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 25px;
+  font-size: 16px;
+  color: #111;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#contact button.btn:hover {
+  background: #fff;
+  color: #f39c12;
+}
+
+/* Footer */
+footer {
+  background: #000;
+  padding: 40px 20px;
+  text-align: center;
+  color: hwb(0 97% 2%);
+}
+
+footer .footer-container {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+footer h3 {
+  color: #f39c12;
+  margin-bottom: 15px;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer ul li {
+  margin: 8px 0;
+}
+
+footer ul li a {
+  color: hwb(0 97% 2%);
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+footer ul li a:hover {
+  color: #fff;
+}
+
+footer .social a {
+  color: #f39c12;
+  margin: 0 10px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+footer .social a:hover {
+  color: #fff;
+}
+
+footer p {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #f9f7f7;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =======================
+   Google Fonts
+======================= */
+/* Add this in your HTML <head>:
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+*/
+
+/* =======================
+   Color Palette
+======================= */
+:root {
+  --primary: #f39c12;   /* Gold */
+  --secondary: #1abc9c; /* Teal */
+  --dark: #0d0d0d;
+  --light: #f5f5f5;
+  --text-main: #ddd;
+  --text-muted: #aaa;
+  --text-white: #fff;
+}
+
+/* =======================
+   Base Styles
+======================= */
+body {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  background-color: var(--dark);
+  color: var(--text-main);
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  color: var(--text-white);
+  margin-bottom: 15px;
+}
+
+h1 {
+  font-size: 3rem;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--primary);
+}
+
+p {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: var(--text-main);
+}
+
+/* =======================
+   Navigation
+======================= */
+/* Slim Transparent Sticky Navbar */
+.navbar {
+  position: fixed;   /* sticky effect */
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 12px 40px;   /* thinner height */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.2);  /* transparent */
+  backdrop-filter: blur(6px);       /* glass effect */
+  -webkit-backdrop-filter: blur(6px);
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+/* Add a slight background when scrolling */
+.navbar.scrolled {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 8px 40px;  /* shrink a bit more on scroll */
+}
+
+.navbar .logo {
+  width: 80px;  /* smaller logo */
+  border-radius: 6px;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+  color: #f4c542; /* golden hover */
+}
+
+/* =======================
+   Buttons
+======================= */
+.btn, .btn-primary, .btn-discover {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 30px;
+  padding: 12px 24px;
+  border: none;
+  background: var(--primary);
+  color: var(--dark);
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.btn:hover, .btn-primary:hover, .btn-discover:hover {
+  background: var(--secondary);
+  color: var(--dark);
+}
+
+/* =======================
+   Adventures Section
+======================= */
+.adventures-section {
+  position: relative;
+  background: url("./images/adv_back.jpg") no-repeat center center/cover;
+  min-height: 100vh; /* full screen */
+  color: var(--text-white);
+  text-align: center;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* vertical center */
+  align-items: center;
+  padding: 60px 20px;
+}
+
+.adventures-section::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.55);
+  z-index: 0;
+}
+
+/* Section Title */
+.adventures-section h1 {
+  font-size: 4rem;
+  font-family: 'Playfair Display', serif;
+  font-weight: bold;
+  text-shadow: 0 0 15px rgba(255, 255, 255, 0.9),
+               0 0 30px rgba(255, 255, 255, 0.8);
+  margin-bottom: 50px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Grid Layout */
+.adventures-section .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  width: 100%;
+  max-width: 1200px;
+  position: relative;
+  z-index: 1; /* above overlay */
+}
+
+/* Cards */
+.adventures-section .card {
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 15px;
+  padding: 20px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 4px 25px rgba(0,0,0,0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: var(--text-main);
+  text-align: center;
+}
+
+.adventures-section .card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.adventures-section .card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 30px rgba(0,0,0,0.6);
+}
+
+.adventures-section .card h3 {
+  color: var(--primary);
+}
+
+.adventures-section .card p {
+  color: var(--text-muted);
+}

@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery | Trails & Tales</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body style="margin:0; font-family:'Poppins',sans-serif; background:#0d0d0d; color:#fff;">
+
+<style>
+  
+/* Footer */
+footer {
+  background: #000;
+  padding: 40px 20px;
+  text-align: center;
+  color: hwb(0 97% 2%);
+}
+
+footer .footer-container {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+footer h3 {
+  color: #f39c12;
+  margin-bottom: 15px;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer ul li {
+  margin: 8px 0;
+}
+
+footer ul li a {
+  color: hwb(0 97% 2%);
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+footer ul li a:hover {
+  color: #fff;
+}
+
+footer .social a {
+  color: #f39c12;
+  margin: 0 10px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+footer .social a:hover {
+  color: #fff;
+}
+
+footer p {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #f9f7f7;
+}
+  </style>
+
+<div class="navbar" style="position:fixed; top:0; left:0; width:100%; padding:12px 40px; display:flex; justify-content:space-between; align-items:center; background:rgba(0,0,0,0.2); backdrop-filter:blur(6px); -webkit-backdrop-filter:blur(6px); z-index:1000; transition:all 0.3s ease;">
+  <img class="logo" src="./images/logo.jpg" style="width:80px; border-radius:6px;">
+  <ul style="list-style:none; display:flex; gap:25px; margin:0; padding:0;">
+    <li><a href="index.html" style="text-decoration:none; font-family:'Poppins',sans-serif; font-size:0.95rem; font-weight:500; color:#fff; transition:color 0.3s;">Home</a></li>
+    <li><a href="travel.html" style="text-decoration:none; font-family:'Poppins',sans-serif; font-size:0.95rem; font-weight:500; color:#fff; transition:color 0.3s;">Travel-Tales</a></li>
+    <li><a href="gallery.html" style="text-decoration:none; font-family:'Poppins',sans-serif; font-size:0.95rem; font-weight:500; color:hsl(0, 20%, 99%); transition:color 0.3s;">Gallery</a></li>
+    <li><a href="Blogs.HTML" style="text-decoration:none; font-family:'Poppins',sans-serif; font-size:0.95rem; font-weight:500; color:#fff; transition:color 0.3s;">Blogs</a></li>
+    <li><a href="Support.HTML" style="text-decoration:none; font-family:'Poppins',sans-serif; font-size:0.95rem; font-weight:500; color:#fff; transition:color 0.3s;">Support</a></li>
+  </ul>
+</div>
+
+  <!-- Banner / Hero Section -->
+  <div class="banner" style="position:relative; height:80vh; overflow:hidden; display:flex; align-items:center; justify-content:center; text-align:center; margin-top:60px;">
+    <img src="./images/blog_ban.jpg" style="width:100%; height:100%; object-fit:cover; filter:brightness(0.5); position:absolute; top:0; left:0;">
+    <div style="position:relative; z-index:1; color:#fff; max-width:700px; padding:0 20px;">
+      <h1 style="font-family:'Playfair Display', serif; font-size:3rem; margin-bottom:15px; color:#f39c12;">Travel Tales & Stories</h1>
+      <p style="font-size:1.2rem; margin-bottom:20px;">Explore unique journeys, inspiring adventures, and unforgettable experiences from across the globe.</p>
+      <button style="padding:12px 25px; border:none; border-radius:25px; font-weight:600; font-size:1rem; background:#f39c12; color:#111; cursor:pointer;">Read Blogs</button>
+    </div>
+  </div>
+
+  <!-- Top Travel Experiences -->
+  <section style="padding:80px 60px; background:#111; text-align:center;">
+    <h2 style="font-family:'Playfair Display',serif; font-size:2.5rem; color:#f39c12; margin-bottom:20px;">Top Travel Experiences</h2>
+    <p style="color:#ccc; font-size:1.1rem; margin-bottom:50px;">Explore our most loved journeys by travelers worldwide</p>
+    <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:30px;">
+      <div style="background:#1a1a1a; border-radius:12px; overflow:hidden;">
+        <img src="./images/e1.jpg" alt="Desert Safari" style="width:100%; height:220px; object-fit:cover;">
+        <h3 style="color:#f39c12; font-family:'Playfair Display', serif; font-size:1.5rem; margin:15px 0;">Desert Safari</h3>
+        <p style="color:#ccc; padding:0 15px 20px;">Feel the thrill of desert dunes with camel rides and campfires under stars.</p>
+      </div>
+      <div style="background:#1a1a1a; border-radius:12px; overflow:hidden;">
+        <img src="./images/e2.jpg" alt="Jungle Safari" style="width:100%; height:220px; object-fit:cover;">
+        <h3 style="color:#f39c12; font-family:'Playfair Display', serif; font-size:1.5rem; margin:15px 0;">Jungle Safari</h3>
+        <p style="color:#ccc; padding:0 15px 20px;">Get up close with wildlife in India’s rich forests and national parks.</p>
+      </div>
+      <div style="background:#1a1a1a; border-radius:12px; overflow:hidden;">
+        <img src="./images/e3.jpg" alt="City Adventures" style="width:100%; height:220px; object-fit:cover;">
+        <h3 style="color:#f39c12; font-family:'Playfair Display', serif; font-size:1.5rem; margin:15px 0;">City Adventures</h3>
+        <p style="color:#ccc; padding:0 15px 20px;">Discover hidden streets, markets, and food experiences in vibrant cities.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Latest Blog Posts -->
+  <section style="padding:80px 60px; background:#121212; text-align:center;">
+    <h2 style="font-family:'Playfair Display', serif; font-size:2.5rem; color:#f39c12; margin-bottom:20px;">Latest Blog Posts</h2>
+    <p style="color:#ccc; font-size:1.1rem; margin-bottom:50px;">Stay updated with our latest travel stories, tips, and guides</p>
+    <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:30px;">
+      <div style="background:#1a1a1a; border-radius:12px; overflow:hidden;">
+        <img src="./images/b1.jpg" alt="Blog 1" style="width:100%; height:220px; object-fit:cover;">
+        <div style="padding:20px;">
+          <h3 style="color:#f39c12; font-family:'Playfair Display', serif; font-size:1.5rem; margin-bottom:10px;">Trekking in the Himalayas</h3>
+          <p style="color:#ccc; font-size:0.95rem; line-height:1.6;">An epic guide to trekking through the majestic Himalayan ranges, including tips and essential gear.</p>
+          <a href="#" style="color:#f39c12; text-decoration:none; font-weight:600;">Read More →</a>
+        </div>
+      </div>
+      <div style="background:#1a1a1a; border-radius:12px; overflow:hidden;">
+        <img src="./images/b2.jpg" alt="Blog 2" style="width:100%; height:220px; object-fit:cover;">
+        <div style="padding:20px;">
+          <h3 style="color:#f39c12; font-family:'Playfair Display', serif; font-size:1.5rem; margin-bottom:10px;">Hidden Beaches of Goa</h3>
+          <p style="color:#ccc; font-size:0.95rem; line-height:1.6;">Discover secret beaches and explore Goan culture beyond the tourist hotspots.</p>
+          <a href="#" style="color:#f39c12; text-decoration:none; font-weight:600;">Read More →</a>
+        </div>
+      </div>
+      <div style="background:#1a1a1a; border-radius:12px; overflow:hidden;">
+        <img src="./images/b3.jpg" alt="Blog 3" style="width:100%; height:220px; object-fit:cover;">
+        <div style="padding:20px;">
+          <h3 style="color:#f39c12; font-family:'Playfair Display', serif; font-size:1.5rem; margin-bottom:10px;">Cultural Wonders of India</h3>
+          <p style="color:#ccc; font-size:0.95rem; line-height:1.6;">Explore India’s cultural heritage, festivals, and local traditions through immersive experiences.</p>
+          <a href="#" style="color:#f39c12; text-decoration:none; font-weight:600;">Read More →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Trips -->
+<section style="padding:80px 60px; background:#111; text-align:center;">
+  <h2 style="font-family:'Playfair Display',serif; font-size:2.5rem; color:#f39c12; margin-bottom:20px;">Featured Trips</h2>
+  <p style="color:#ccc; font-size:1.1rem; margin-bottom:50px;">Handpicked journeys to inspire your next adventure</p>
+  <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:30px;">
+    <div style="background:#1a1a1a; border-radius:12px; overflow:hidden;">
+      <img src="./images/HIMALLYA.jpg" alt="Trip 1" style="width:100%; height:220px; object-fit:cover;">
+      <h3 style="color:#f39c12; font-family:'Playfair Display',serif; font-size:1.5rem; margin:15px 0;">Himalayan Trek</h3>
+      <p style="color:#ccc; padding:0 15px 20px;">Conquer the peaks and experience stunning landscapes with expert guides.</p>
+    </div>
+    <div style="background:#1a1a1a; border-radius:12px; overflow:hidden;">
+      <img src="./images/blog_f2.jpg" alt="Trip 2" style="width:100%; height:220px; object-fit:cover;">
+      <h3 style="color:#f39c12; font-family:'Playfair Display',serif; font-size:1.5rem; margin:15px 0;">Coastal Escape</h3>
+      <p style="color:#ccc; padding:0 15px 20px;">Golden beaches, hidden coves, and mesmerizing sunsets await you.</p>
+    </div>
+    <div style="background:#1a1a1a; border-radius:12px; overflow:hidden;">
+      <img src="./images/CUL_TRAVEL.jpg" alt="Trip 3" style="width:100%; height:220px; object-fit:cover;">
+      <h3 style="color:#f39c12; font-family:'Playfair Display',serif; font-size:1.5rem; margin:15px 0;">Cultural Journeys</h3>
+      <p style="color:#ccc; padding:0 15px 20px;">Discover traditions, cuisines, and festivals across India.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Travel Tips -->
+<section style="padding:80px 60px; background:#121212; text-align:center;">
+  <h2 style="font-family:'Playfair Display',serif; font-size:2.5rem; color:#f39c12; margin-bottom:20px;">Travel Tips & Guides</h2>
+  <p style="color:#ccc; font-size:1.1rem; margin-bottom:50px;">Useful advice and insights to make your adventures safe and memorable</p>
+  <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:30px;">
+    <div style="background:#1a1a1a; border-radius:12px; padding:20px;">
+      <h3 style="color:#f39c12; font-family:'Playfair Display',serif; font-size:1.5rem; margin-bottom:15px;">Packing Essentials</h3>
+      <p style="color:#ccc; line-height:1.6;">Learn what to pack for mountain treks, beach trips, and cultural tours to stay comfortable and safe.</p>
+    </div>
+    <div style="background:#1a1a1a; border-radius:12px; padding:20px;">
+      <h3 style="color:#f39c12; font-family:'Playfair Display',serif; font-size:1.5rem; margin-bottom:15px;">Travel Safety</h3>
+      <p style="color:#ccc; line-height:1.6;">Tips for staying safe while exploring remote destinations and urban cities alike.</p>
+    </div>
+    <div style="background:#1a1a1a; border-radius:12px; padding:20px;">
+      <h3 style="color:#f39c12; font-family:'Playfair Display',serif; font-size:1.5rem; margin-bottom:15px;">Photography Tips</h3>
+      <p style="color:#ccc; line-height:1.6;">Capture your journeys beautifully with expert photography tricks and gear recommendations.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Newsletter Signup -->
+<section style="padding:80px 60px; background:#111; text-align:center;">
+  <h2 style="font-family:'Playfair Display',serif; font-size:2.5rem; color:#f39c12; margin-bottom:20px;">Subscribe to Our Newsletter</h2>
+  <p style="color:#ccc; font-size:1.1rem; margin-bottom:30px;">Get the latest travel stories, tips, and exclusive deals straight to your inbox</p>
+  <form style="display:flex; flex-wrap:wrap; justify-content:center; gap:15px;">
+    <input type="email" placeholder="Your Email" required style="padding:15px; border-radius:25px; border:none; width:300px; background:#222; color:#fff; font-size:1rem;">
+    <button type="submit" style="padding:15px 30px; border-radius:25px; border:none; background:#f39c12; color:#111; font-weight:600; cursor:pointer;">Subscribe</button>
+  </form>
+</section>
+
+<!-- Customer Experiences / Testimonials Section with Images -->
+<section style="padding:80px 60px; background:#121212; text-align:center;">
+  <div style="max-width:1200px; margin:auto;">
+    <!-- Section Header -->
+    <div style="margin-bottom:50px;">
+      <h2 style="font-family:'Playfair Display', serif; font-size:2.5rem; color:#f39c12; margin-bottom:15px;">Traveler Experiences</h2>
+      <p style="color:#ccc; font-size:1.1rem; line-height:1.6;">
+        The real essence of Trails & Tales lies in the stories, memories, and adventures shared by our travelers. Here are some of their cherished experiences.
+      </p>
+    </div>
+
+    <!-- Testimonials Grid -->
+    <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:30px;">
+
+      <!-- Testimonial 1 -->
+      <div style="background:#1a1a1a; padding:20px; border-radius:12px; box-shadow:0 4px 15px rgba(0,0,0,0.5);">
+        <img src="./images/tes1.jpg" alt="Sarah Mitchell" style="width:60px; height:60px; border-radius:50%; margin-bottom:15px;">
+        <p style="font-style:italic; color:#ccc; line-height:1.6;">
+          "Exploring the Himalayas with Trails & Tales was a dream come true. The guides were incredibly knowledgeable, and every sunrise felt magical. This journey changed my perspective on adventure and nature."
+        </p>
+        <p style="color:#f39c12; font-weight:600; margin-top:15px;">— Sarah Mitchell, Adventure Enthusiast</p>
+      </div>
+
+      <!-- Testimonial 2 -->
+      <div style="background:#1a1a1a; padding:20px; border-radius:12px; box-shadow:0 4px 15px rgba(0,0,0,0.5);">
+        <img src="./images/tes2.jpg" alt="David & Emma Thompson" style="width:60px; height:60px; border-radius:50%; margin-bottom:15px;">
+        <p style="font-style:italic; color:#ccc; line-height:1.6;">
+          "I proposed to my partner on a hidden beach in Goa arranged by Trails & Tales. The staff ensured everything was perfect, from sunset timing to photography. A truly unforgettable moment!"
+        </p>
+        <p style="color:#f39c12; font-weight:600; margin-top:15px;">— David & Emma Thompson</p>
+      </div>
+
+      <!-- Testimonial 3 -->
+      <div style="background:#1a1a1a; padding:20px; border-radius:12px; box-shadow:0 4px 15px rgba(0,0,0,0.5);">
+        <img src="./images/tes3.jpg" alt="James Hartwell" style="width:60px; height:60px; border-radius:50%; margin-bottom:15px;">
+        <p style="font-style:italic; color:#ccc; line-height:1.6;">
+          "Trails & Tales made my business trip to India unforgettable. The cultural tours and hidden spots they recommended gave me a unique perspective on the country I could never have found on my own."
+        </p>
+        <p style="color:#f39c12; font-weight:600; margin-top:15px;">— James Hartwell, International Consultant</p>
+      </div>
+
+      <!-- Testimonial 4 -->
+      <div style="background:#1a1a1a; padding:20px; border-radius:12px; box-shadow:0 4px 15px rgba(0,0,0,0.5);">
+        <img src="./images/tes4.jpg" alt="Maria Santos" style="width:60px; height:60px; border-radius:50%; margin-bottom:15px;">
+        <p style="font-style:italic; color:#ccc; line-height:1.6;">
+          "As a solo traveler, I felt safe and inspired by the experiences Trails & Tales curated. From cultural workshops to hidden cafes, I discovered parts of India I would never have explored alone."
+        </p>
+        <p style="color:#f39c12; font-weight:600; margin-top:15px;">— Maria
+
+</p> Santos, Solo Traveler</p>
+      </div>
+
+    </div>
+    </div>
+    </section>
+  <!-- Instagram Gallery -->
+  <section style="padding:80px 60px; background:#111; text-align:center;">
+    <h2 style="font-family:'Playfair Display', serif; font-size:2.5rem; color:#f39c12; margin-bottom:40px;">Follow Our Adventures</h2>
+    <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:20px;">
+      <div style="border-radius:12px; overflow:hidden;"><img src="./images/t1.jpg" style="width:100%; height:180px; object-fit:cover;"></div>
+      <div style="border-radius:12px; overflow:hidden;"><img src="./images/t2.jpg" style="width:100%; height:180px; object-fit:cover;"></div>
+      <div style="border-radius:12px; overflow:hidden;"><img src="./images/t3.jpg" style="width:100%; height:180px; object-fit:cover;"></div>
+      <div style="border-radius:12px; overflow:hidden;"><img src="./images/t4.jpg" style="width:100%; height:180px; object-fit:cover;"></div>
+    </div>
+  </section>
+
+
+
+
+
+         <!-- Footer -->
+<footer>
+  <div class="footer-container">
+    <div>
+      <h3>Trails & Tales</h3>
+      <p>Exploring the world one story at a time.  
+      Join me as I travel, capture, and share unique experiences from across the globe.</p>
+    </div>
+
+    <div>
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="travel.html">Travel</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="Blogs.HTML">Blogs</a></li>
+        <li><a href="Support.HTML">Support</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h3>Contact</h3>
+      <p>Email: contact@trailsandtales.com</p>
+      <p>Phone: +91 98765 43210</p>
+      <p>Location: India</p>
+    </div>
+
+    <div>
+      <h3>Follow Me</h3>
+      <div class="social">
+        <a href="#">Instagram</a>
+        <a href="#">YouTube</a>
+        <a href="#">Facebook</a>
+      </div>
+    </div>
+  </div>
+
+  <p>© 2025 Trails & Tales | Designed with ❤️ by RUP</p>
+</footer>
+
+
+</body>
+
+</html>
